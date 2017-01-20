@@ -6,18 +6,19 @@ Persistence is done on Redis which maintains track of last 5 comments on news.
 
 # Setting up Redis
 
-Download the Tar from following link
+## Download the Tar from following link
 http://download.redis.io/releases/redis-3.2.6.tar.gz
 
+## Compile Redis
 Unzip it  
 cd redis-3.2.6  
 make  
 
-To run redis  
+## Run Redis
 cd src  
 ./redis-server ../redis.conf  
 
-To persist the data in Redis DB on multiple startups  
+## To persist the data in Redis DB on multiple startups  
 open redis.conf  
 Search for 'appendonly' and make its value 'yes'  
 
