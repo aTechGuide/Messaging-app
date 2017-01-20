@@ -8,7 +8,7 @@ import org.springframework.data.redis.listener.PatternTopic;
 import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
 
-import in.kamran.Receiver;
+import in.kamran.subscriber.NewsSubscriber;
 import in.kamran.util.Constants;
 
 @Configuration
@@ -20,13 +20,12 @@ public class MessagingConfiguration {
 
 		RedisMessageListenerContainer container = new RedisMessageListenerContainer();
 		container.setConnectionFactory(connectionFactory);
-		container.addMessageListener(listenerAdapter, new PatternTopic(Constants.COMMENTS.getValue()));
-
+		container.addMessageListener(listenerAdapter, new PatternTopic(Constants.News.getValue()));
 		return container;
 	}
 
 	@Bean
-	MessageListenerAdapter listenerAdapter(Receiver receiver) {
+	MessageListenerAdapter listenerAdapter(NewsSubscriber receiver) {
 		return new MessageListenerAdapter(receiver, "receiveMessage");
 	}
 

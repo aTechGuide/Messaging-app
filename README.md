@@ -1,5 +1,9 @@
 # Messaging-app
 
+This app keeps track of last 5 comments on news and publish new comment to news subscriber.
+
+Persistence is done on Redis which maintains track of last 5 comments on each topic.
+
 # References
 https://spring.io/guides/gs/messaging-redis/
 

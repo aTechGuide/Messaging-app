@@ -6,7 +6,7 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public enum Constants {
-	COMMENTS("comments");
+	News("newscomments");
 	
 	private String value;
 }
