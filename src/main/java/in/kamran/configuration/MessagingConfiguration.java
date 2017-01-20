@@ -20,7 +20,7 @@ public class MessagingConfiguration {
 
 		RedisMessageListenerContainer container = new RedisMessageListenerContainer();
 		container.setConnectionFactory(connectionFactory);
-		container.addMessageListener(listenerAdapter, new PatternTopic(Constants.CHAT.getValue()));
+		container.addMessageListener(listenerAdapter, new PatternTopic(Constants.COMMENTS.getValue()));
 
 		return container;
 	}
