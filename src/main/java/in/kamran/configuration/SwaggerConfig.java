@@ -19,7 +19,7 @@ public class SwaggerConfig {
 
 	static {
 		appInfo = new ApiInfo("Messaging APP", "App keeping count of last 5 comments", "1.0", "",
-				new Contact("Kamran Ali", "url", "kamranalinitb@gmail.com"), "License - Free", "License - URL");
+				new Contact("Kamran Ali", "http://techguide.guru/", "kamranalinitb@gmail.com"), "", "");
 	}
 
 	@Bean
