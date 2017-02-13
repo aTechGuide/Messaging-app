@@ -22,6 +22,9 @@ cd src
 open redis.conf  
 Search for 'appendonly' and make its value 'yes'  
 
+# API List
+http://localhost:8080/swagger-ui.html#/
+
 
 # References
 https://spring.io/guides/gs/messaging-redis/
@@ -33,3 +36,5 @@ Build Redis ->  https://dzone.com/articles/spring-data-redis-0
 CRUD Operations on Object -> http://www.baeldung.com/spring-data-redis-tutorial
 
 Using Redis CLI -> https://examples.javacodegeeks.com/enterprise-java/spring/spring-data-redis-example-2/
+
+Swagger Integration -> http://www.baeldung.com/swagger-2-documentation-for-spring-rest-api  
