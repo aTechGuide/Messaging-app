@@ -17,7 +17,7 @@ cd src
 ./redis-server ../redis.conf
 ```
 
-**To persist the data in Redis DB on multiple startups**
+**To persist the data in Redis DB on multiple startups**  
 Open ``` redis.conf ```. Search for 'appendonly' and make its value 'yes'  
 
 # API List
