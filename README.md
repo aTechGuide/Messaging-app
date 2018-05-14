@@ -1,26 +1,24 @@
-# Messaging-app
-
-This app keeps track of last 5 comments on news and publish new comment to news subscriber.
-
-Persistence is done on Redis which maintains track of last 5 comments on news.
+# Messaging App
+This app keeps track of last 5 comments on news and publish new comment to news subscriber. Persistence is done on Redis which maintains track of last 5 comments on news.
 
 # Setting up Redis
+Download the Tar from [this](http://download.redis.io/releases/redis-3.2.6.tar.gz) link
 
-## Download the Tar from following link
-http://download.redis.io/releases/redis-3.2.6.tar.gz
-
-## Compile Redis
+**Compiling Redis**
+```
 Unzip it  
 cd redis-3.2.6  
-make  
+make
+```
 
-## Run Redis
+**Run Redis**
+```
 cd src  
-./redis-server ../redis.conf  
+./redis-server ../redis.conf
+```
 
-## To persist the data in Redis DB on multiple startups  
-open redis.conf  
-Search for 'appendonly' and make its value 'yes'  
+**To persist the data in Redis DB on multiple startups**
+Open ``` redis.conf ```. Search for 'appendonly' and make its value 'yes'  
 
 # API List
 http://localhost:8080/swagger-ui.html#/
