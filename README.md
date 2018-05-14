@@ -10,7 +10,6 @@ Unzip it
 cd redis-3.2.6  
 make
 ```
-
 **Run Redis**
 ```
 cd src  
